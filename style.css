@@ -180,6 +180,7 @@ nav {
   font-size: 0.75rem;
   font-weight: 700;
   line-height: 1;
+  letter-spacing: 0.84px;
   text-transform: uppercase;
   transition-property: background-color, color;
   transition-duration: 0.2s;
@@ -199,3 +200,129 @@ nav {
 /* End of Nav */
 
 /* MAIN */
+
+.main {
+  padding: 1rem;
+  max-width: 82rem;
+  margin: auto;
+}
+
+.top-section {
+  padding: 0.5rem 1rem;
+  background-color: #212426;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-section h5 {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  margin: 0;
+  color: #e4e8ed;
+  letter-spacing: 1.26px;
+}
+
+.top-section__link {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-left: 0.75rem;
+  background-color: #146d23;
+  color: #f9f9fb;
+  padding: 0.6rem 1rem;
+  border-radius: 0.15rem;
+  transition-property: background-color, color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+
+.top-section__link:hover {
+  background-color: #0b401c;
+}
+
+.top-section__link:active {
+  background-color: #2da63f;
+}
+
+.main-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .main-section {
+    grid-template-columns: 1fr;
+  }
+  .standings,
+  .stats {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main-section {
+    grid-template-columns: 3fr 1fr;
+  }
+  .standings {
+    display: none;
+  }
+}
+
+.standings {
+}
+
+.articles {
+}
+
+.top-article {
+  position: relative;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-color: #e4e8ed;
+  box-shadow: 0 1px 3px rgba(22, 24, 26, 0.1),
+    0 5px 10px -3px rgba(22, 24, 26, 0.05);
+  overflow: hidden;
+}
+
+.article-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #0d5d82;
+  z-index: 1;
+}
+
+.article-link picture {
+  display: block;
+  width: 100%;
+  background-color: #e4e8ed;
+  height: 200px;
+  z-index: 1;
+}
+
+.top-image {
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+.stats {
+}
+
+.content {
+  background-color: #fff;
+  position: relative;
+  margin-top: 180px;
+  padding: 15px 10px;
+  z-index: 10;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
