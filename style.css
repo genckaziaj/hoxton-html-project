@@ -6,8 +6,9 @@
 
 body {
   background-color: #edeef0;
-  color: #48494a;
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.44;
 }
 
 ul {
@@ -17,6 +18,8 @@ ul {
 a {
   text-decoration: none;
 }
+
+/* Header */
 
 .results {
   display: grid;
@@ -77,3 +80,122 @@ a {
   font-weight: 400;
   color: #a5a6a7;
 }
+
+/* End of Header */
+
+/* Nav */
+nav {
+  background-color: #16181a;
+  border-bottom: 1px solid #393c40;
+  display: flex;
+  align-items: stretch;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: 500;
+  margin: 0 0.5rem;
+}
+
+.navigation {
+  padding: 0 0.5rem;
+  border-left: 1px solid #393c40;
+  display: flex;
+  flex: auto;
+  align-items: center;
+}
+
+.nav-item {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0.5rem;
+}
+
+.navigation h6 {
+  margin: 0 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #e4e8ed;
+  text-transform: uppercase;
+}
+
+.search {
+  margin-right: 0.5rem;
+  width: 110px;
+  max-width: 200px;
+  border-left: none;
+  margin-left: auto;
+  padding: 0;
+}
+
+.search-form {
+  font-size: 13px;
+  width: 100%;
+  position: relative;
+}
+
+.input-search {
+  background-color: #585d63;
+  font-size: 16px;
+  border: none;
+  border-radius: 2px;
+  padding: 3px 29px 3px 10px;
+  color: #ffffff;
+  width: 100%;
+  height: 31px;
+  margin: auto;
+  outline: none;
+}
+
+.btn-search {
+  position: absolute;
+  background: none;
+  border: none;
+  right: 0;
+  top: 0;
+  width: 29px;
+  height: 31px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.btn-search svg {
+  fill: #9ba1a6;
+  height: auto;
+}
+
+.sign-in {
+  flex: 0 0 auto;
+}
+
+.sign-in a {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 0.15rem;
+  background-color: #f0f2f5;
+  color: #585d63;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  transition-property: background-color, color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+
+.sign-in a:hover {
+  background-color: #e4e8ed;
+  color: #393c40;
+}
+
+.sign-in a:active {
+  background-color: #f9f9fb;
+  color: #7b8187;
+}
+
+/* End of Nav */
+
+/* MAIN */
